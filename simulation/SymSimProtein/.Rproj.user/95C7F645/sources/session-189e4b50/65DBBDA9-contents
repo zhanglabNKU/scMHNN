@@ -1,0 +1,7 @@
+tmp <- read.table("../../PoissonBeta/result.txt", header = T)
+tmp <- tmp[,c(2,3,4)]
+tmp <- tmp[,c(2,3,1)]
+colnames(tmp) <- colnames(match_params)
+match_params <- tmp
+save(match_params, file="../data/protein_sim.RData")
+data(protein_sim)
