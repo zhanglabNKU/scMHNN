@@ -45,7 +45,7 @@ for key, value in label_dict.items():
 if not args.supervised:
 
     print('cell clustering validation')
-    Y_label = np.load('./datasets/example_dataset/lbls.npy')
+    Y_label = np.load('./datasets/example_dataset_simulation1/lbls.npy')
     x_ach = np.load('./output/scMHNN_embedding.npy')
     # print(Y_label.shape)
     # print(x_ach.shape)
