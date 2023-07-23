@@ -22,7 +22,7 @@ parser.add_argument('--data_dir_rna',  default='./datasets/example_dataset_simul
 parser.add_argument('--data_dir_adt',  default='./datasets/example_dataset_simulation1/adt.npy', help='path of Protein data')
 parser.add_argument('--data_dir_atac',  default='./datasets/example_dataset_simulation1/atac.npy', help='path of ATAC data')
 parser.add_argument('--lbls_dir',  default='./datasets/example_dataset_simulation1/lbls.npy', help='path of cell lbls')
-parser.add_argument("--supervised", type=bool, default=1, help='True for stage 2 (cell type annotation), False for stage1 (unsupervised cell representation learning)')
+parser.add_argument("--supervised", type=bool, default=0, help='True for stage 2 (cell type annotation), False for stage1 (unsupervised cell representation learning)')
 parser.add_argument("--m_prob", type=float, default=1.0, help='m_prob')
 parser.add_argument("--K_neigs", type=int, default=70, help='K_neigs')  
 parser.add_argument("--p_tri", type=float, default=0.8, help='sample probability for tri-neighbor set')
