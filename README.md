@@ -80,13 +80,13 @@ Afger stage 2, the true labels and predicted labels for query set will be saved 
 Evaluate the cell clustering performance:
 
 ```
-python validation.py -- supervised False
+python validation.py
 ```
 
 Evaluate the cell type annotation performance:
 
 ```
-python validation.py -- supervised True
+python validation.py --supervised 1
 ```
 
 
