@@ -1,7 +1,7 @@
 # scMHNN
 
 
-### scMHNN enables integrative analysis of single-cell multi-omics data
+### scMHNN: a novel hypergraph neural network for integrative analysis of single-cell epigenomic, transcriptomic and proteomic data 
 
 We present scMHNN to integrate single-cell multi-omics data based on a hypergraph neural network: 
 
