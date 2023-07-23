@@ -48,12 +48,6 @@ Seurat (4.3.0)
 Recomended usage procedure for cell representation learning and cell type annotation is as follows. 
 
 
-1. Installation
-
-
-Recomended usage procedure is as follows. 
-
-
 1.Installation
 
 The running environment of scMHNN can be installed from docker-hub repository: 
@@ -78,7 +72,7 @@ git clone https://github.com/zhanglabNKU/scMHNN.git
 cd scMHNN/
 ```
 
-2.  Run stage 1 (Figure 1A) for unsupervised cell representation learning.
+2.Run stage 1 (Figure 1A) for unsupervised cell representation learning.
 
 ```
 python train.py 
@@ -87,7 +81,7 @@ python train.py
 After stage 1, the learned cell representation matrix (cell×embedding) and pretrained hypergraph encoder will be saved in folder './scMHNN/output/'
 
 
-3. Run stage 2 (Figure 1B) to finetune scMHNN with a given ratio of labeled cells, and perform cell type annotation for remaining cells. For example, use 2% labeled cells as reference set:
+3.Run stage 2 (Figure 1B) to finetune scMHNN with a given ratio of labeled cells, and perform cell type annotation for remaining cells. For example, use 2% labeled cells as reference set:
 
 
 ```
@@ -98,7 +92,7 @@ python train.py --supervised 1 --labeled_cell_ratio 0.02
 Afger stage 2, the true labels and predicted labels for query set will be saved in folder './scMHNN/output/'
 
 
-4. Evaluate the output results.
+4.Evaluate the output results.
 
 Evaluate the cell clustering performance:
 
