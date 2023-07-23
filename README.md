@@ -58,7 +58,7 @@ cd scMHNN/
 2.  Run stage 1 (Figure 1A) for unsupervised cell representation learning.
 
 ```
-python train.py -- supervised False 
+python train.py 
 ```
 
 After stage 1, the learned cell representation matrix (cell×embedding) and pretrained hypergraph encoder will be saved in folder './scMHNN/output/'
@@ -68,7 +68,7 @@ After stage 1, the learned cell representation matrix (cell×embedding) and pret
 
 
 ```
-python train.py -- supervised True -- labeled_cell_ratio 0.02 
+python train.py --supervised 1 -- labeled_cell_ratio 0.02 
 ```
 
 
