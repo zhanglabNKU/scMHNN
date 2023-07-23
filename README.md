@@ -20,7 +20,7 @@ We present scMHNN to integrate single-cell multi-omics data based on a hypergrap
 
 scMHNN is implemented in python, the generation of simulated tri-modal dataset is implemented in R.
 
-[![python >3.6.8](https://img.shields.io/badge/python-3.6.8-brightgreen)](https://www.python.org/) 
+[![python >3.8.12](https://img.shields.io/badge/python-3.8.12-brightgreen)](https://www.python.org/) 
 
 [![torch-1.10.0](https://img.shields.io/badge/torch-1.10.0-red)](https://github.com/pytorch/pytorch) 
 [![scanpy-1.9.1](https://img.shields.io/badge/scanpy-1.9.1-blue)](https://github.com/theislab/scanpy) 
@@ -49,6 +49,29 @@ Recomended usage procedure for cell representation learning and cell type annota
 
 
 1. Installation
+
+
+Recomended usage procedure is as follows. 
+
+
+1.Installation
+
+The running environment of scMHNN can be installed from docker-hub repository: 
+
+1.1 Pull the docker image from docker-hub
+
+```
+docker pull nkuweili/scmhnn:latest
+```
+
+1.2 Run the docker image (GPU is needed)
+
+
+```
+docker run --name scmhnn --gpus all -it --rm nkuweili/scmhnn:latest /bin/bash
+```
+
+1.3 Download this repository
 (This usually takes 10 seconds on a normal desktop computer)
 ```
 git clone https://github.com/zhanglabNKU/scMHNN.git
