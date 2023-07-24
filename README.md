@@ -75,7 +75,7 @@ cd scMHNN/
 2.Run stage 1 (Figure 1A) for unsupervised cell representation learning.
 
 ```
-python train.py 
+3 train.py 
 ```
 
 After stage 1, the learned cell representation matrix (cell×embedding) and pretrained hypergraph encoder will be saved in folder './scMHNN/output/'
@@ -85,7 +85,7 @@ After stage 1, the learned cell representation matrix (cell×embedding) and pret
 
 
 ```
-python train.py --supervised 1 --labeled_cell_ratio 0.02 
+3 train.py --supervised 1 --labeled_cell_ratio 0.02 
 ```
 
 
@@ -97,13 +97,13 @@ Afger stage 2, the true labels and predicted labels for query set will be saved 
 Evaluate the cell clustering performance:
 
 ```
-python validation.py
+3 validation.py
 ```
 
 Evaluate the cell type annotation performance:
 
 ```
-python validation.py --supervised 1
+3 validation.py --supervised 1
 ```
 
 
