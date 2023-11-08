@@ -174,3 +174,10 @@ simulation
 - `alpha_means`: drop out rate of RNA data.
 - `target_props`: drop out rate of ATAC data.
 - `seed`: random seed.
+
+## Citation
+If you find our work helpful in your resarch or work, please cite us as:
+
+
+Li W, Xiang B, Yang F, et al. scMHNN: a novel hypergraph neural network for integrative analysis of single-cell epigenomic, transcriptomic and proteomic data. Briefings in Bioinformatics, 2023, 24(6): bbad391. https://doi.org/10.1093/bib/bbad391
+
